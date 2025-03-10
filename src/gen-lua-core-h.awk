@@ -23,6 +23,7 @@ BEGIN {
 
 }
 
+/^typedef struct CallInfo CallInfo;/ { next }  # Skip repeated typedefs
 !is_core_include() { print }
 
 END {
